@@ -72,12 +72,8 @@ public class PageController extends BaseController {
         contents.setStatus(status);
         contents.setSlug(slug);
         contents.setType(Types.PAGE.getType());
-        if (null != allowComment) {
-            contents.setAllowComment(allowComment == 1);
-        }
-        if (null != allowPing) {
-            contents.setAllowPing(allowPing == 1);
-        }
+        contents.setAllowComment(true);
+        contents.setAllowPing(true);
         contents.setAuthorId(users.getUid());
 
         try {

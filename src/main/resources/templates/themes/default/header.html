@@ -9,6 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <meta name="keywords" th:content="${keywords ?: commons.site_option('site_keywords')}"/>
     <meta name="description" th:content="${description ?:commons.site_option('site_description')}"/>
+    <link rel="shortcut icon" th:href="@{/user/img/apple-touch-icon.png}"/>
     <link rel="apple-touch-icon" th:href="@{/user/img/apple-touch-icon.png}"/>
     <title><th:block th:text="${title ?: '首页'}+' - '+${commons.site_option('site_title','My Blog')}"></th:block></title>
     <link th:href="@{//cdn.bootcss.com/highlight.js/9.9.0/styles/xcode.min.css}" rel="stylesheet"/>
@@ -53,12 +54,13 @@
         <a href="/index" class="navbar-logo">
             <img th:src="@{/user/img/logo.png}" title="首页" alt="首页"/>
         </a>
-        <div id="t" style="float: left;margin: 0 250px;"><span></span>年<span></span>月<span></span>日&nbsp;<span></span>时<span></span>分<span></span>秒</div>
+        <div id="t" style="float: left;margin: 0 200px;"><span></span>年<span></span>月<span></span>日&nbsp;<span></span>时<span></span>分<span></span>秒</div>
         <div class="navbar-menu">
             <a th:href="${commons.site_url('/index')}">首页</a>
             <a th:href="${commons.site_url('/archives')}">归档</a>
             <a th:href="${commons.site_url('/links')}">友链</a>
-            <a th:href="${commons.site_url('/about')}">关于</a>
+            <a th:href="${commons.site_url('/about-MyBlog')}">关于</a>
+            <a th:href="${commons.site_url('/helper')}">投喂</a>
         </div>
         <div class="navbar-search" onclick="">
             <span class="icon-search"></span>
