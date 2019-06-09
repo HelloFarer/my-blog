@@ -441,7 +441,7 @@ public final class Commons {
         Map<String, String> map = new HashMap<>();
         map.put("weibo", "https://weibo.com/");
         map.put("zhihu", "https://www.zhihu.com/");
-        map.put("github", "https://github.com/");
+        map.put("github", "https://github.com/HelloFarer/my-blog");
         map.put("twitter", "https://twitter.com/");
         return map;
     }
